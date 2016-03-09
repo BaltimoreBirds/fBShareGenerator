@@ -11,6 +11,6 @@ var routes = require('./project/controllers/index');
 app.use('/', routes);
 app.use( express.static( __dirname + '/project/public' ));
 
-app.listen(3000);
+app.listen(process.env.PORT || 3000)
 
 module.exports = app;
