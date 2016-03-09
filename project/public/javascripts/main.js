@@ -12,11 +12,19 @@ jQuery(document).ready(function($){
 		$('div#output a').attr('href', shareLink).show();
 	});	
 
+	// Updated character count
 	$('textarea[name="shareDescription"]').on('keyup', function(){
 		$('span#descripCharCount').text( 300- ($(this).val().length) );
 	});
 
+	// Updated character count
 	$('input[name="title"]').on('keyup', function(){
 		$('span#titleCharCount').text( 100- ($(this).val().length) );
-	});	
+	});
+
+	//Clear form
+	$('button.clearForm').on('click', function(){
+		//reload page
+		window.location.href = window.location.href;
+	});
 });
