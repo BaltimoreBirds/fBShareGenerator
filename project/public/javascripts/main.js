@@ -10,6 +10,7 @@ jQuery(document).ready(function($){
 		});
 		$('div#output p.linkOutput').text(shareLink);
 		$('div#output a').attr('href', shareLink).show();
+		$('div#output').show();
 	});	
 
 	// Updated character count
