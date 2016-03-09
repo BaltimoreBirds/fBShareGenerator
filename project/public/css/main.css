@@ -8,9 +8,8 @@ body{
 .banner{
 	width:100%;
 }
-h2{
+h2, h3{
 	text-align: center;
-	margin: 10px 0;
 	color: #05334C;
 }
 .inputWrap{
@@ -37,6 +36,12 @@ div#output{
 }
 p.linkOutput{
 	overflow: scroll;
+}
+input[type="submit"]{
+	background-color: #05334C;
+	color: white;
+	border: none;
+	height: 25px;
 }
 @media(max-width: 400px){
 	.generatorWrap{
