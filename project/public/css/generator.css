@@ -35,7 +35,7 @@ div#output{
 	background-color: #EEEDD5;
 }
 p.linkOutput{
-	overflow: scroll;
+	overflow: hidden;
 }
 input[type="submit"], button{
 	background-color: #05334C;
