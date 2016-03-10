@@ -9,6 +9,7 @@ jQuery(document).ready(function($){
 			description: $('textarea[name="shareDescription"]').val(),
 		});
 		$('div#output p.linkOutput').text(shareLink);
+		$('input[name="shareLinkInput"]').val(shareLink).change();
 		$('div#output a').attr('href', shareLink).show();
 		$('div#output').show();
 	});	
@@ -27,5 +28,10 @@ jQuery(document).ready(function($){
 	$('button.clearForm').on('click', function(){
 		//reload page
 		window.location.href = window.location.href;
+	});
+	$('button.clipboardCopy').on('click', function(){
+		// copy link
+		$('input#shareLinkInputField').select();
+		document.execCommand("copy");
 	});
 });
