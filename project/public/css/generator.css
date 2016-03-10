@@ -53,6 +53,10 @@ p.linkOutput{
   -webkit-hyphens: auto;
   hyphens: auto;
 }
+span.disclaimer{
+	font-size: 9px;
+	color: black;
+}
 input[type="submit"], button{
 	background-color: #05334C;
 	color: white;
